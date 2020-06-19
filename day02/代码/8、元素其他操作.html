@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+	<input type="button" value="点击">
+	<ul>
+		<li>1</li>
+	</ul>
+	<div id="box">div内容</div>
+	<!-- appendChild -->
+	<script type="text/javascript">
+		$('input').click(function () {
+			// remove：删除所有，包括元素本身
+			// $('div').remove();
+			// $('div').empty();
+			$('div').html('');
+		});
+
+
+		
+		// $('input').click(function () {
+		// 	// 创建li
+		// 	// var li = $('<li>内容</li>');
+		// 	// // 追加到页面
+		// 	// // $('ul').append(li);
+		// 	// // li.appendTo('ul');
+		// 	// // $('ul').prepend(li);
+		// 	// li.prependTo('ul');
+
+		// 	var div = $('<div>元素</div>');
+		// 	// $('ul').after(div);
+		// 	$('ul').before(div);
+		// });
+
+
+	</script>
+
+</body>
+</html>

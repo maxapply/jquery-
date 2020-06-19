@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+	<input type="button" value="点击">
+	<input type="button" value="点击">
+	<input type="button" value="点击">
+	<input type="button" value="点击">
+	<input type="button" value="点击">
+	<input type="button" value="点击">
+
+
+	<script type="text/javascript">
+		
+		$('input').click(function () {
+			// 给当前元素添加背景
+			// $(this).css('background', 'red');
+			// // 其他元素
+			// $(this).siblings().css('background','');
+			// 链式编程
+			$(this).css('background', 'blue').siblings().css('background','');
+		});
+
+
+
+	</script>
+</body>
+</html>

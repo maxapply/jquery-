@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<style type="text/css">
+		div {
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- <div id="d1" class="a1" age="666">哇哈哈</div> -->
+	<img src="a.jpg" id="d1" index="666">
+
+
+	<script type="text/javascript">
+		// 获取属性
+		// console.log( $('img').prop('src') );
+		// console.log( $('img').prop('id') );
+		// 设置属性
+		// $('img').prop('id', '哇哈哈');
+
+
+		// 自定义属性
+		// console.log( $('img').attr('index') );
+		// 设置属性
+		// $('img').attr('index', 999);
+		
+		// 数据缓存
+		$('img').data('uname', '阿飞');
+		console.log( $('img').data('uname') );
+
+	</script>
+
+
+</body>
+</html>

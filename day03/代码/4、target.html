@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<style type="text/css">
+		
+		.c1 {
+			width: 100px;
+			height: 100px;
+			background: red;
+		}
+		.c2 {
+			width: 50px;
+			height: 50px;
+			background: blue;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<div class="c1">
+		<!-- <div class="c2">
+			哇哈哈
+		</div> -->
+		<div class="box">132</div>
+		<p>段落</p>
+		<span>span</span>
+	</div>
+
+	
+	<script type="text/javascript">
+			
+		var divs = document.querySelectorAll('div');
+
+		for (var i = 0; i < divs.length; i++) {
+			divs[i].onclick = function (e){
+				// alert(this.className);
+				console.log(e.target);
+			}
+		}
+
+
+	</script>
+
+
+
+</body>
+</html>

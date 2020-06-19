@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<style type="text/css">
+		
+		.c1 {
+			background: red;
+		}
+
+		.c2 {
+			width:100px;
+			height: 100px;
+			background: blue;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<input type="button" value="点击">
+	<div class="c1">123</div>
+	
+	<script type="text/javascript">
+		
+		$('input').click(function () {
+			// 添加类
+			// $('div').addClass('c2');
+			// 删除类
+			// $('div').removeClass('c1');
+			// 切换类
+			$('div').toggleClass('c2');
+
+		});
+
+
+	</script>
+</body>
+</html>

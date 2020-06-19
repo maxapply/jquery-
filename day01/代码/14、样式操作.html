@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<style type="text/css">
+		
+		div {
+			width: 100px;
+			height: 100px;
+			background: red;
+		}
+
+	</style>
+</head>
+<body>
+	<input type="button" value="点击">
+	<div>哇哈哈</div>
+
+	<script type="text/javascript">
+			
+		// css方法
+		$('input').click(function () {
+			// console.log( $('div').css('width') );
+			// $('div').css('width', '300px');
+			// $('div').css('height', 300);
+			// $('div').css('background','blue');
+			
+			// 如果，设置的属性多，那么直接传递对象既可
+			$('div').css({
+				// 属性名 ：属性值，
+				width : 200,
+				height : 200,
+				background : 'yellow',
+				'font-size' : '60px',
+			});
+		});
+
+
+
+	</script>
+
+</body>
+</html>

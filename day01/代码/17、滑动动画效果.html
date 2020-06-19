@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+
+	<style type="text/css">
+	
+		div {
+			width: 100px;
+			height: 100px;
+			background: blue;
+		}		
+	</style>
+</head>
+<body>
+	<input type="button" value="点击slideDown" id="btn1">
+	<input type="button" value="点击slideUp" id="btn2">
+	<input type="button" value="点击slideToggle" id="btn3">
+	<div></div>
+	<script type="text/javascript">
+		
+		$('#btn2').click(function () {
+			$('div').slideUp(1000,function () {
+				console.log('OK');
+			});
+		});
+
+		$('#btn1').click(function () {
+			$('div').slideDown(1000,function () {
+				console.log('执行OK');
+			});
+		});
+		$('#btn3').click(function () {
+			$('div').slideToggle();
+		});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+	
+	<input type="button" value="点击">
+	
+
+	<script type="text/javascript">
+		// DOM对象，只能用DOM里面的方法
+		// jQuery对象，只能用jQ里面的方法
+		
+		// var btn = document.querySelector('input');
+		// btn.css('background','pink');【不可以这样写】
+		// $(btn).css('background','blue');
+		// btn.style.background = 'red';
+
+
+
+
+		// $('input').css('background','yellow');
+		// $('input').style.background = 'blue';【不可以这样写】
+		// [input,input,input]
+		// $('input')[0].style.background = 'pink';
+		$('input').get(0).style.background = 'pink';
+
+	</script>
+
+
+</body>
+</html>;

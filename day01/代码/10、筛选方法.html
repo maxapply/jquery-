@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+	
+	<!-- <div id="box">
+		<p class="p1">段落1</p>
+		<div>
+			<p>段落2</p>
+		</div>
+	</div> -->
+	<ul>
+		<li>1</li>
+		<li class="li2">2</li>
+		<li>3</li>
+		<li>4</li>
+		<li class="li5 aa">5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+		<li class="li9">9</li>
+		<li>10</li>
+	</ul>
+	<script type="text/javascript">
+		
+		// console.log( $('.p1').parent().parent().parent().parent() );
+		// console.log( $('#box').children('.p1') );
+		console.log( $('#box').find('p') );
+
+		// $('.li5').siblings('.li2').css('background','red');
+		// $('.li5').nextAll('.li9').css('background','yellow');
+		// $('.li5').prevAll('.li2').css('background', 'pink');
+		// console.log( $('.li5').hasClass('aaa') );
+		var index = 2;
+		// $('li:eq(' + index + ')').css('background','pink');
+		$('li').eq(index).css('background', 'red');
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+	<input type="button" value="点击">
+
+
+
+	<script type="text/javascript">
+		// 事件只会执行一次的
+		// $('input').one('click',function () {
+		// 	console.log('哇哈哈');
+		// });
+
+
+		$('input').one({
+			click : function () {
+				console.log(1);
+			},
+			mouseover : function () {
+				console.log(2);
+			}
+		});
+	</script>
+</body>
+</html>

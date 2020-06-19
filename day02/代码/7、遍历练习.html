@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+	<input type="button" value="点击">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	
+
+	<script type="text/javascript">
+
+		
+		$('input').click(function () {
+			var sum = 0;
+			// 遍历
+			$('div').each(function (i, elm) {
+				// 获取elm的值
+				var n = $(elm).html();
+				// 相加
+				// sum = sum + n;
+				sum += parseInt(n);
+			});
+			// 打印
+			console.log(sum);
+		});
+		// 遍历
+		// $(元素).each(function (i, elm) {});
+		// $.each(对象, function (i, elm) {});
+
+
+	</script>
+</body>
+</html>

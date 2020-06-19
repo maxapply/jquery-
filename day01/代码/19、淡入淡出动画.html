@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<style type="text/css">
+		div {
+			width: 100px;
+			height: 100px;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	
+	<input type="button" value="点击fadeIn" id="btn1">
+	<input type="button" value="点击fadeOut" id="btn2">
+	<input type="button" value="点击fadeToggle" id="btn3">
+	<input type="button" value="点击fadeTo" id="btn4">
+	<div></div>
+	
+	<script type="text/javascript">
+		
+		$('#btn2').click(function () {
+			$('div').fadeOut(2000,'linear', function () {
+				console.log(123);
+			});
+		});
+
+		$('#btn1').click(function () {
+			$('div').fadeIn(2000);
+		});
+
+		$('#btn3').click(function () {
+			$('div').fadeToggle(2000);
+		});
+
+		$('#btn4').click(function () {
+			$('div').fadeTo(1000, 0.3);
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+	
+	<input type="button" value="点击">
+
+	
+	<script type="text/javascript">
+		// 点击事件
+		// $('input').click(function () {
+		// 	console.log(1);
+		// });
+
+		// $('input').mouseover(function () {
+		// 	console.log(2);
+		// });
+
+		// $('input').mouseout(function () {
+		// 	console.log(3);
+		// });
+		
+		// $('input').on('click mouseover mouseout',function () {
+		// 	console.log(123);
+		// });
+
+		// 如果处理程序想要不同，以下写方法
+		$('input').on({
+			click : function () {
+				console.log(1);
+			},
+			mouseover : function () {
+				console.log(2);
+			},
+			mouseout : function () {
+				console.log(3);
+			}
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<style type="text/css">
+		div {
+			width: 100px;
+			height: 100px;
+			background: red;
+			margin: 10px;
+			padding: 10px;
+			border: 10px solid blue;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" value="点击">
+	<div></div>
+
+	<script type="text/javascript">
+		
+		$('input').click(function () {
+
+			// console.log( $('div').width(), $('div').height() );
+			// $('div').width(200);
+			// console.log( $('div').innerWidth() );
+			// $('div').innerWidth(200);
+			// console.log( $('div').outerWidth() );
+			// $('div').outerWidth(200);
+			// console.log( $('div').outerWidth(true) );
+			$('div').outerWidth(200,true);
+
+			// console.log($('div').width());
+
+		});
+
+
+	</script>
+	
+</body>
+</html>

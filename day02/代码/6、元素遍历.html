@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+	<input type="button" value="点击">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+
+	
+	<script type="text/javascript">
+		
+		// var arr = ['red','blue','yellow'];
+		var arr1 = [{name:'张三丰'},{name:'阿飞'},{name:'带土'}];
+
+		$('input').click(function () {
+			// $('div').css('background', arr[1]);
+			// 自己遍历
+			// $('div').each(function (i, elm) { // [div,div,div]
+			// 	// console.log(i,elm);
+			// 	$(elm).css('background', arr[i]);
+			// });
+			
+			// 遍历元素
+			// $('div').each(function (index, elm) {
+			// 	$(elm).css('background', arr[index]);
+			// });
+
+			// 遍历数据
+			// $.each($('div'), function (i, elm) {
+			// 	console.log( elm, i );
+			// });
+			$.each(arr1, function (i, elm) {
+				console.log(i, elm);
+			});
+
+		});
+
+
+	</script>
+
+</body>
+</html>
